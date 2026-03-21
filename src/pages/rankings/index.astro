@@ -1,0 +1,20 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const rankings = (await getCollection('rankings')).sort(
+	(a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime()
+);
+---
+
+<BaseLayout title="Rankings | Nariz Casual" description="Rankings prácticos de perfumes por contexto de uso.">
+	<h1>Rankings</h1>
+	<div class="card-grid">
+		{rankings.map((entry) => (
+			<article class="card">
+				<h2><a href={`/rankings/${entry.data.slug}/`}>{entry.data.title}</a></h2>
+				<p class="muted">{entry.data.description}</p>
+			</article>
+		))}
+	</div>
+</BaseLayout>

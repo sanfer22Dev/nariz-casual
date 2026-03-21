@@ -1,0 +1,34 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+	const reviews = await getCollection('reviews');
+	return reviews.map((review) => ({ params: { slug: review.data.slug } }));
+}
+
+const { slug } = Astro.params;
+const review = (await getCollection('reviews')).find((entry) => entry.data.slug === slug);
+
+if (!review) {
+	throw new Error(`Review no encontrada para slug: ${slug}`);
+}
+
+const { Content } = await render(review);
+---
+
+<BaseLayout title={`${review.data.nombre} | Review`} description={review.data.description}>
+	<article>
+		<h1>{review.data.nombre}</h1>
+		<p class="muted">{review.data.marca} · {review.data.tipo}</p>
+		<ul>
+			<li><strong>Año:</strong> {review.data.anio ?? 'N/D'}</li>
+			<li><strong>Género o estilo:</strong> {review.data.generoEstilo}</li>
+			<li><strong>Estaciones ideales:</strong> {review.data.estacionesIdeales.join(', ')}</li>
+			<li><strong>Rendimiento:</strong> {review.data.rendimiento}</li>
+			<li><strong>Ocasión de uso:</strong> {review.data.ocasionUso}</li>
+			<li><strong>Puntuación:</strong> {review.data.puntuacion}/10</li>
+		</ul>
+		<Content />
+	</article>
+</BaseLayout>

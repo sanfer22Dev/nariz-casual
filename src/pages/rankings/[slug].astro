@@ -1,0 +1,26 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+	const entries = await getCollection('rankings');
+	return entries.map((entry) => ({ params: { slug: entry.data.slug } }));
+}
+
+const { slug } = Astro.params;
+const entry = (await getCollection('rankings')).find((item) => item.data.slug === slug);
+
+if (!entry) {
+	throw new Error(`Ranking no encontrado para slug: ${slug}`);
+}
+
+const { Content } = await render(entry);
+---
+
+<BaseLayout title={`${entry.data.title} | Ranking`} description={entry.data.description}>
+	<article>
+		<h1>{entry.data.title}</h1>
+		<p class="muted">{entry.data.description}</p>
+		<Content />
+	</article>
+</BaseLayout>

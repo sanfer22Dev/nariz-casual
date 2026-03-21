@@ -1,17 +1,74 @@
 ---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
 
+const reviews = (await getCollection('reviews'))
+	.sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime())
+	.slice(0, 3);
+
+const comparativas = (await getCollection('comparativas'))
+	.sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime())
+	.slice(0, 3);
+
+const rankings = (await getCollection('rankings'))
+	.sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime())
+	.slice(0, 3);
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout
+	title="Nariz Casual | Reviews y rankings reales"
+	description="Web de contenido sobre perfumes con reviews reales, comparativas y rankings útiles."
+>
+	<section>
+		<h1>Reseñas reales de perfumes, sin humo</h1>
+		<p class="muted">
+			Reviews honestas, comparativas directas y rankings prácticos para ayudarte a elegir mejor.
+		</p>
+		<p>
+			<a href="/reviews">Ver reviews</a> · <a href="/comparativas">Ver comparativas</a> ·
+			<a href="/rankings">Ver rankings</a>
+		</p>
+	</section>
+
+	<section>
+		<h2>Búsqueda rápida</h2>
+		<input type="search" placeholder="Busca por nombre, marca o tipo..." aria-label="Buscar perfumes" />
+	</section>
+
+	<section>
+		<h2>Últimas reseñas</h2>
+		<div class="card-grid">
+			{reviews.map((entry) => (
+				<article class="card">
+					<h3><a href={`/reviews/${entry.data.slug}/`}>{entry.data.nombre}</a></h3>
+					<p class="muted">{entry.data.marca} · {entry.data.tipo}</p>
+					<p>Puntuación: {entry.data.puntuacion}/10</p>
+				</article>
+			))}
+		</div>
+	</section>
+
+	<section>
+		<h2>Comparativas destacadas</h2>
+		<div class="card-grid">
+			{comparativas.map((entry) => (
+				<article class="card">
+					<h3><a href={`/comparativas/${entry.data.slug}/`}>{entry.data.title}</a></h3>
+					<p class="muted">{entry.data.description}</p>
+				</article>
+			))}
+		</div>
+	</section>
+
+	<section>
+		<h2>Rankings útiles</h2>
+		<div class="card-grid">
+			{rankings.map((entry) => (
+				<article class="card">
+					<h3><a href={`/rankings/${entry.data.slug}/`}>{entry.data.title}</a></h3>
+					<p class="muted">{entry.data.description}</p>
+				</article>
+			))}
+		</div>
+	</section>
+</BaseLayout>

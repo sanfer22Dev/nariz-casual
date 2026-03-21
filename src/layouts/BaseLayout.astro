@@ -9,6 +9,9 @@ const {
 	description = 'Reseñas reales de perfumes: reviews, comparativas y rankings útiles.'
 } = Astro.props;
 
+const siteUrl = Astro.site ?? new URL('https://narizcasual.com');
+const canonicalUrl = new URL(Astro.url.pathname, siteUrl).toString();
+
 const navLinks = [
 	{ href: '/', label: 'Inicio' },
 	{ href: '/reviews', label: 'Reviews' },
@@ -25,7 +28,19 @@ const navLinks = [
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="description" content={description} />
+		<meta name="robots" content="index,follow" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="canonical" href={canonicalUrl} />
+		<link rel="sitemap" type="application/xml" href="https://narizcasual.com/sitemap-index.xml" />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="es_ES" />
+		<meta property="og:site_name" content="Nariz Casual" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content={canonicalUrl} />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<title>{title}</title>

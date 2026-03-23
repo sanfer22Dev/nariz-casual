@@ -40,14 +40,16 @@ const navLinks = [
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content={title} />
 		<meta name="twitter:description" content={description} />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
+		<link rel="icon" type="image/png" href="/favicon.png" />
+		<link rel="apple-touch-icon" href="/favicon.png" />
 		<title>{title}</title>
 	</head>
 	<body>
 		<header>
 			<div class="container nav">
-				<a class="logo" href="/">Nariz Casual</a>
+				<a class="logo" href="/" aria-label="Nariz Casual">
+					<img src="/logo_narizcasual.png" alt="Nariz Casual" />
+				</a>
 				<nav aria-label="Principal">
 					<ul>
 						{navLinks.map((link) => (
@@ -132,8 +134,15 @@ const navLinks = [
 	}
 
 	.logo {
-		font-weight: 700;
+		display: inline-flex;
+		align-items: center;
 		text-decoration: none;
+	}
+
+	.logo img {
+		display: block;
+		height: 64px;
+		width: auto;
 	}
 
 	nav ul {
@@ -164,5 +173,11 @@ const navLinks = [
 		align-items: center;
 		gap: 1rem;
 		flex-wrap: wrap;
+	}
+
+	@media (max-width: 640px) {
+		.logo img {
+			height: 46px;
+		}
 	}
 </style>

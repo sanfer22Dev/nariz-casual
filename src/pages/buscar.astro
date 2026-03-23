@@ -1,0 +1,181 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const reviews = await getCollection('reviews');
+const articulos = await getCollection('articulos');
+const comparativas = await getCollection('comparativas');
+const rankings = await getCollection('rankings');
+
+const reviewDocs = reviews.map((entry) => ({
+	title: entry.data.nombre,
+	description: `${entry.data.marca} · ${entry.data.tipo} · ${entry.data.generoEstilo}`,
+	href: `/reviews/${entry.data.slug}/`,
+	type: 'Review',
+	text: [
+		entry.data.nombre,
+		entry.data.marca,
+		entry.data.tipo,
+		entry.data.generoEstilo,
+		entry.data.ocasionUso,
+		entry.data.rendimiento,
+		entry.data.estacionesIdeales.join(' ')
+	].join(' ')
+}));
+
+const articuloDocs = articulos.map((entry) => ({
+	title: entry.data.title,
+	description: entry.data.description,
+	href: `/articulos/${entry.data.slug}/`,
+	type: 'Articulo',
+	text: [entry.data.title, entry.data.description].join(' ')
+}));
+
+const comparativaDocs = comparativas.map((entry) => ({
+	title: entry.data.title,
+	description: entry.data.description,
+	href: `/comparativas/${entry.data.slug}/`,
+	type: 'Comparativa',
+	text: [entry.data.title, entry.data.description].join(' ')
+}));
+
+const rankingDocs = rankings.map((entry) => ({
+	title: entry.data.title,
+	description: entry.data.description,
+	href: `/rankings/${entry.data.slug}/`,
+	type: 'Ranking',
+	text: [entry.data.title, entry.data.description].join(' ')
+}));
+
+const pageDocs = [
+	{
+		title: 'Inicio',
+		description: 'Portada de Nariz Casual',
+		href: '/',
+		type: 'Pagina',
+		text: 'inicio portada nariz casual'
+	},
+	{
+		title: 'Reviews',
+		description: 'Listado de reseñas de perfumes',
+		href: '/reviews/',
+		type: 'Pagina',
+		text: 'reviews resenas perfumes'
+	},
+	{
+		title: 'Articulos',
+		description: 'Guías y artículos de perfumería',
+		href: '/articulos/',
+		type: 'Pagina',
+		text: 'articulos guias perfumeria'
+	},
+	{
+		title: 'Sobre mi',
+		description: 'Sobre el autor de Nariz Casual',
+		href: '/sobre-mi/',
+		type: 'Pagina',
+		text: 'sobre mi autor nariz casual'
+	},
+	{
+		title: 'Contacto',
+		description: 'Canal de contacto y colaboraciones',
+		href: '/contacto/',
+		type: 'Pagina',
+		text: 'contacto email colaboraciones'
+	}
+];
+
+const searchDocs = [...reviewDocs, ...articuloDocs, ...comparativaDocs, ...rankingDocs, ...pageDocs];
+---
+
+<BaseLayout title="Buscar | Nariz Casual" description="Búsqueda global de contenido en Nariz Casual.">
+	<section>
+		<h1>Búsqueda</h1>
+		<form action="/buscar" method="get" class="search-form">
+			<input
+				type="search"
+				name="q"
+				placeholder="Busca reviews, artículos, marcas o temas..."
+				aria-label="Buscar en todo el sitio"
+				required
+			/>
+			<button type="submit">Buscar</button>
+		</form>
+	</section>
+
+	<section>
+		<p id="search-state" class="muted"></p>
+		<div id="results" class="card-grid"></div>
+	</section>
+</BaseLayout>
+
+<script define:vars={{ searchDocs }}>
+	const normalize = (value) =>
+		value
+			.toLowerCase()
+			.normalize('NFD')
+			.replace(/[\u0300-\u036f]/g, '');
+
+	const params = new URLSearchParams(window.location.search);
+	const rawQuery = params.get('q') ?? '';
+	const query = normalize(rawQuery.trim());
+
+	const stateEl = document.querySelector('#search-state');
+	const resultsEl = document.querySelector('#results');
+	const inputEl = document.querySelector('input[name="q"]');
+
+	if (inputEl) {
+		inputEl.value = rawQuery;
+	}
+
+	if (!stateEl || !resultsEl) {
+		throw new Error('No se encontraron los contenedores de busqueda.');
+	}
+
+	if (!query) {
+		stateEl.textContent = 'Escribe algo para empezar a buscar.';
+	} else {
+		const results = searchDocs.filter((doc) => normalize(doc.text).includes(query));
+
+		if (results.length === 0) {
+			stateEl.textContent = `No hay resultados para "${rawQuery}".`;
+		} else {
+			stateEl.textContent = `${results.length} resultado(s) para "${rawQuery}".`;
+			resultsEl.innerHTML = results
+				.map(
+					(doc) => `
+						<article class="card">
+							<p class="muted">${doc.type}</p>
+							<h2><a href="${doc.href}">${doc.title}</a></h2>
+							<p>${doc.description}</p>
+						</article>
+					`
+				)
+				.join('');
+		}
+	}
+</script>
+
+<style>
+	.search-form {
+		display: flex;
+		gap: 0.5rem;
+		flex-wrap: wrap;
+	}
+
+	.search-form input {
+		flex: 1 1 280px;
+		padding: 0.65rem 0.75rem;
+		border: 1px solid #ddd;
+		border-radius: 0.5rem;
+	}
+
+	.search-form button {
+		padding: 0.65rem 1rem;
+		border: 1px solid #1d1d1d;
+		border-radius: 0.5rem;
+		background: #1d1d1d;
+		color: #fff;
+		cursor: pointer;
+	}
+</style>

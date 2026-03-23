@@ -1,0 +1,25 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const articulos = (await getCollection('articulos')).sort(
+	(a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime()
+);
+---
+
+<BaseLayout
+	title="Artículos | Nariz Casual"
+	description="Artículos y guías sobre perfumes: rendimiento, consejos y comparativas de uso real."
+>
+	<h1>Artículos</h1>
+	<p class="muted">Contenido largo para profundizar en rendimiento, uso y selección de perfumes.</p>
+
+	<div class="card-grid">
+		{articulos.map((entry) => (
+			<article class="card">
+				<h2><a href={`/articulos/${entry.data.slug}/`}>{entry.data.title}</a></h2>
+				<p class="muted">{entry.data.description}</p>
+			</article>
+		))}
+	</div>
+</BaseLayout>

@@ -1,0 +1,26 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+	const entries = await getCollection('articulos');
+	return entries.map((entry) => ({ params: { slug: entry.data.slug } }));
+}
+
+const { slug } = Astro.params;
+const entry = (await getCollection('articulos')).find((item) => item.data.slug === slug);
+
+if (!entry) {
+	throw new Error(`Articulo no encontrado para slug: ${slug}`);
+}
+
+const { Content } = await render(entry);
+---
+
+<BaseLayout title={`${entry.data.title} | Artículo`} description={entry.data.description}>
+	<article>
+		<h1>{entry.data.title}</h1>
+		<p class="muted">Publicado el {entry.data.publishedAt.toLocaleDateString('es-ES')}</p>
+		<Content />
+	</article>
+</BaseLayout>

@@ -6,7 +6,7 @@ interface Props {
 
 const {
 	title,
-	description = 'Reseñas reales de perfumes: reviews, comparativas y rankings útiles.'
+	description = 'Reseñas reales de perfumes: reviews honestas y útiles.'
 } = Astro.props;
 
 const siteUrl = Astro.site ?? new URL('https://narizcasual.com');
@@ -15,8 +15,7 @@ const canonicalUrl = new URL(Astro.url.pathname, siteUrl).toString();
 const navLinks = [
 	{ href: '/', label: 'Inicio' },
 	{ href: '/reviews', label: 'Reviews' },
-	{ href: '/comparativas', label: 'Comparativas' },
-	{ href: '/rankings', label: 'Rankings' },
+	{ href: '/articulos', label: 'Artículos' },
 	{ href: '/sobre-mi', label: 'Sobre mí' },
 	{ href: '/contacto', label: 'Contacto' }
 ];

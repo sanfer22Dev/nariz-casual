@@ -41,8 +41,19 @@ const rankings = defineCollection({
 	})
 });
 
+const articulos = defineCollection({
+	loader: glob({ base: './src/content/articulos', pattern: '**/*.{md,mdx}' }),
+	schema: z.object({
+		title: z.string(),
+		description: z.string(),
+		publishedAt: z.date(),
+		slug: z.string()
+	})
+});
+
 export const collections = {
 	reviews,
 	comparativas,
-	rankings
+	rankings,
+	articulos
 };

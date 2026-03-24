@@ -4,5 +4,159 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 <BaseLayout title="Contacto | Nariz Casual" description="Canal de contacto para consultas y colaboraciones.">
 	<h1>Contacto</h1>
-	<p>Para consultas o colaboraciones, escríbeme a: <a href="mailto:samu.espiinosa@gmail.com">samu.espiinosa@gmail.com</a></p>
+	<p class="muted">
+		Si quieres escribirme por una consulta, colaboración o propuesta, usa este formulario. El mensaje se
+		enviará a <a href="mailto:hola@narizcasual.com">hola@narizcasual.com</a>.
+	</p>
+
+	<form id="contact-form" class="contact-form" action="/api/contact" method="post" novalidate>
+		<div class="field-grid">
+			<label>
+				<span>Nombre</span>
+				<input type="text" name="nombre" placeholder="Tu nombre" autocomplete="name" required maxlength="80" />
+			</label>
+
+			<label>
+				<span>Email</span>
+				<input type="email" name="email" placeholder="tu@email.com" autocomplete="email" required maxlength="120" />
+			</label>
+		</div>
+
+		<label>
+			<span>Asunto</span>
+			<input type="text" name="asunto" placeholder="¿En qué puedo ayudarte?" required maxlength="120" />
+		</label>
+
+		<label>
+			<span>Mensaje</span>
+			<textarea name="mensaje" placeholder="Escribe tu mensaje..." rows="8" required maxlength="4000"></textarea>
+		</label>
+
+		<div class="honeypot" aria-hidden="true">
+			<label>
+				No rellenes este campo
+				<input type="text" name="website" tabindex="-1" autocomplete="off" />
+			</label>
+		</div>
+
+		<label class="checkbox-row">
+			<input type="checkbox" name="privacidad" value="accepted" required />
+			<span>
+				He leído y acepto la <a href="/politica-de-privacidad">política de privacidad</a>.
+			</span>
+		</label>
+
+		<div class="form-actions">
+			<button type="submit">Enviar mensaje</button>
+			<p id="form-status" class="muted" role="status" aria-live="polite"></p>
+		</div>
+	</form>
 </BaseLayout>
+
+<script>
+	const form = document.querySelector('#contact-form');
+	const status = document.querySelector('#form-status');
+
+	if (form instanceof HTMLFormElement && status instanceof HTMLElement) {
+		form.addEventListener('submit', async (event) => {
+			event.preventDefault();
+			status.textContent = 'Enviando mensaje...';
+
+			const formData = new FormData(form);
+
+			try {
+				const response = await fetch(form.action, {
+					method: 'POST',
+					body: formData
+				});
+
+				const data = await response.json();
+				status.textContent = data.message ?? 'No se pudo procesar la solicitud.';
+
+				if (response.ok) {
+					form.reset();
+				}
+			} catch {
+				status.textContent = 'No se pudo enviar el mensaje. Intentalo de nuevo.';
+			}
+		});
+	}
+</script>
+
+<style>
+	.contact-form {
+		display: grid;
+		gap: 1rem;
+		max-width: 760px;
+	}
+
+	.field-grid {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 1rem;
+	}
+
+	label {
+		display: grid;
+		gap: 0.45rem;
+	}
+
+	label span {
+		font-weight: 600;
+	}
+
+	input,
+	textarea {
+		width: 100%;
+		padding: 0.75rem 0.85rem;
+		border: 1px solid #d9d9d9;
+		border-radius: 0.6rem;
+		font: inherit;
+	}
+
+	textarea {
+		resize: vertical;
+	}
+
+	.checkbox-row {
+		display: flex;
+		align-items: flex-start;
+		gap: 0.65rem;
+	}
+
+	.checkbox-row input {
+		width: auto;
+		margin-top: 0.25rem;
+	}
+
+	.form-actions {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		flex-wrap: wrap;
+	}
+
+	button {
+		padding: 0.75rem 1rem;
+		border: 1px solid #1d1d1d;
+		border-radius: 0.6rem;
+		background: #1d1d1d;
+		color: #fff;
+		font: inherit;
+		cursor: pointer;
+	}
+
+	.honeypot {
+		position: absolute;
+		left: -9999px;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+	}
+
+	@media (max-width: 720px) {
+		.field-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

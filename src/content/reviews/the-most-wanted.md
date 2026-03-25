@@ -48,7 +48,7 @@ Por último, aparece el amberwood, que le da un punto más serio y equilibrado a
 
 Para lo que cuesta este perfume, que suele encontrarse por menos de 50 € en España, me parece que tiene un rendimiento muy bueno.
 
-En mi piel dura unas 8 horas, y la proyección es muy fuerte al principio. Es de esos perfumes que entran en una sala y se hacen notar. De hecho, hoy mismo lo llevaba puesto y me han dado un cumplido.
+En mi piel dura unas 8 horas, y la proyección es muy fuerte al principio. Es de esos perfumes que entran en una sala y se hacen notar; si quieres controlar mejor esa salida potente, en la [guía sobre cómo aplicar perfume](/articulos/guia-como-aplicar-perfume/) explico cómo dosificar según contexto. De hecho, hoy mismo lo llevaba puesto y me han dado un cumplido.
 
 Si te gusta oler bien, juvenil, pero con un pequeño toque serio, es una opción muy interesante.
 
@@ -60,7 +60,7 @@ Yo lo usaría sobre todo en:
 - fiestas
 - eventos donde quieras destacar
 
-No lo recomiendo demasiado para climas cálidos ni para ambientes cerrados si no te gusta llamar mucho la atención, porque puede resultar algo invasivo.
+No lo recomiendo demasiado para climas cálidos ni para ambientes cerrados si no te gusta llamar mucho la atención, porque puede resultar algo invasivo, y ese enfoque de uso lo desarrollo también en [cuándo y por qué usar un perfume u otro](/articulos/cuando-y-por-que-usar-un-perfume-u-otro/).
 
 ## Puntos fuertes
 

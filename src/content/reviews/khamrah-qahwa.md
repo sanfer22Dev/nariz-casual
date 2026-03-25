@@ -44,7 +44,7 @@ El café, al menos en mi piel, no destaca demasiado por sí solo, pero sí aport
 
 ## Rendimiento: duración y estela
 
-Aquí es donde Khamrah Qahwa juega en otra liga dentro de su rango de precio.
+Aquí es donde Khamrah Qahwa juega en otra liga dentro de su rango de precio, y por rendimiento encaja perfectamente en este análisis de [los 5 perfumes que más duran](/articulos/los-5-perfumes-que-mas-duran/).
 
 En mi piel dura unas 10 horas, y la proyección es muy fuerte. Es de esos perfumes que entran en una sala y se hacen notar. De hecho, me ha pasado entrar en un espacio pequeño y recibir cumplidos de varias personas casi al momento.
 
@@ -52,14 +52,14 @@ Si te gusta hacerte notar, es una opción muy seria. Si prefieres algo discreto,
 
 ## ¿Cuándo usarlo?
 
-Yo lo usaría sobre todo en:
+Yo lo usaría sobre todo en estas situaciones, muy en la línea de lo que cuento en [cuándo y por qué usar un perfume u otro](/articulos/cuando-y-por-que-usar-un-perfume-u-otro/):
 
 - noches frías
 - cenas con amigos
 - fiestas
 - eventos donde quieras destacar
 
-No lo recomiendo demasiado para climas cálidos ni para ambientes cerrados si no te gusta llamar mucho la atención, porque puede resultar invasivo.
+No lo recomiendo demasiado para climas cálidos ni para ambientes cerrados si no te gusta llamar mucho la atención, porque puede resultar invasivo; si necesitas ajustar mejor las atomizaciones, en esta [guía sobre cómo aplicar perfume](/articulos/guia-como-aplicar-perfume/) explico cómo hacerlo.
 
 ## Puntos fuertes
 

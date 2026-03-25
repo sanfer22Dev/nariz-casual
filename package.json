@@ -1,5 +1,5 @@
 {
-  "name": "github_samu",
+  "name": "nariz-casual",
   "type": "module",
   "version": "0.0.1",
   "engines": {
@@ -9,6 +9,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "deploy": "astro build && wrangler deploy --config dist/server/wrangler.json",
     "astro": "astro"
   },
   "dependencies": {
@@ -16,5 +17,8 @@
     "@astrojs/sitemap": "^3.7.1",
     "astro": "^6.0.8",
     "resend": "^6.9.4"
+  },
+  "devDependencies": {
+    "wrangler": "^4.76.0"
   }
 }

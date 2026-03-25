@@ -44,7 +44,7 @@ Con el paso del tiempo sigue manteniendo esa sensación fresca, aunque el toque 
 
 No es ningún secreto que Y Eau de Parfum destaca por su duración y su estela.
 
-En mi piel dura unas 10 horas, y la proyección durante las primeras horas es muy buena. Es de esos perfumes que se hacen notar sin llegar a resultar pesados, especialmente si controlas bien las atomizaciones. Yo lo uso bastante para ir a la oficina en verano y casi siempre recibo algún cumplido.
+En mi piel dura unas 10 horas, y la proyección durante las primeras horas es muy buena. Es de esos perfumes que se hacen notar sin llegar a resultar pesados, especialmente si controlas bien las atomizaciones, algo que explico en la [guía sobre cómo aplicar perfume](/articulos/guia-como-aplicar-perfume/). Yo lo uso bastante para ir a la oficina en verano y casi siempre recibo algún cumplido.
 
 Al ser una fragancia orientada a primavera y verano, me parece muy llevadera incluso cuando aprieta algo el calor.
 
@@ -57,7 +57,7 @@ Yo lo usaría sobre todo en:
 - primavera y verano
 - situaciones en las que quieras oler bien sin complicarte demasiado
 
-Realmente, al ser una fragancia azul, se puede usar casi cuando quieras. Para mí destaca especialmente durante el día y en climas cálidos, aunque también la veo perfectamente válida para una cena de empresa o una ocasión algo más arreglada.
+Realmente, al ser una fragancia azul, se puede usar casi cuando quieras. Para mí destaca especialmente durante el día y en climas cálidos, aunque también la veo perfectamente válida para una cena de empresa o una ocasión algo más arreglada, justo como comento en [cuándo y por qué usar un perfume u otro](/articulos/cuando-y-por-que-usar-un-perfume-u-otro/).
 
 ## Puntos fuertes
 
@@ -78,7 +78,7 @@ No tengo en mi colección una fragancia exactamente igual, así que la comparaci
 
 Michael Kors Pour Homme comparte algunas notas con Y Eau de Parfum, como la bergamota, el geranio y el vetiver. En olor son fragancias relativamente similares, aunque Michael Kors Pour Homme me parece algo más sintética.
 
-En cuanto a duración y estela, Y Eau de Parfum está un paso por delante.
+En cuanto a duración y estela, Y Eau de Parfum está un paso por delante y por eso también lo incluyo en [los 5 perfumes que más duran](/articulos/los-5-perfumes-que-mas-duran/).
 
 ## Opinión final
 

@@ -77,7 +77,7 @@ Eso sí: siempre hay que tener en cuenta tres cosas:
 - la época del año
 - el lugar al que vas
 
-No es lo mismo aplicar mucho un perfume fresco en verano que un perfume dulce y potente en un espacio cerrado.
+No es lo mismo aplicar mucho un perfume fresco en verano que un perfume dulce y potente en un espacio cerrado: por ejemplo, no trataría igual [Y Eau de Parfum](/reviews/y-eau-de-parfum/) que [Khamrah Qahwa](/reviews/khamrah-qahwa/) o [The Most Wanted](/reviews/the-most-wanted/).
 
 ## ¿Cómo hacer que el perfume dure el máximo posible?
 
@@ -87,7 +87,7 @@ La primera es aplicar el perfume con la piel limpia, idealmente después de la d
 
 La segunda es usar una crema hidratante sin olor o incluso un poco de vaselina en la zona donde vas a aplicar el perfume. Esto puede ayudar a que la piel retenga mejor la fragancia.
 
-La tercera, y para mí muy importante, es asumir que no todos los perfumes están hechos para durar eternamente. En esos casos, lo más práctico es llevar un pequeño decant y reaplicar cuando notes que el perfume ya ha bajado demasiado.
+La tercera, y para mí muy importante, es asumir que no todos los perfumes están hechos para durar eternamente. En esos casos, lo más práctico es llevar un pequeño decant y reaplicar cuando notes que el perfume ya ha bajado demasiado, algo que por ejemplo me pasa con [Acqua di Gio](/reviews/acqua-di-gio/) y bastante menos con [Infinity](/reviews/infinity/).
 
 ## Conclusión
 

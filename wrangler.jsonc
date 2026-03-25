@@ -1,0 +1,8 @@
+{
+	"name": "nariz-casual",
+	"compatibility_date": "2026-03-17",
+	"vars": {
+		"CONTACT_TO_EMAIL": "hola@narizcasual.com",
+		"CONTACT_FROM_EMAIL": "Nariz Casual <contact@narizcasual.com>"
+	}
+}

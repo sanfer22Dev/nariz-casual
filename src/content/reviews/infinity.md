@@ -46,11 +46,11 @@ En el secado aparece algo más de oscuridad gracias al tabaco, pero la haba tonk
 
 Personalmente, considero que es una de las fragancias con más duración que he probado.
 
-En mi piel puede durar un día entero sin ningún problema, y en ropa puede quedarse durante varios días. La proyección es fuerte, pero más bien cercana, así que no llega a ser excesivamente invasiva para los demás. No es de esos perfumes que entran en una sala y dominan el ambiente, pero sí de los que permanecen contigo durante horas.
+En mi piel puede durar un día entero sin ningún problema, y en ropa puede quedarse durante varios días. La proyección es fuerte, pero más bien cercana, así que no llega a ser excesivamente invasiva para los demás. No es de esos perfumes que entran en una sala y dominan el ambiente, pero sí de los que permanecen contigo durante horas, por eso lo incluyo en [los 5 perfumes que más duran](/articulos/los-5-perfumes-que-mas-duran/).
 
 Yo suelo utilizar esta fragancia en ocasiones especiales, sobre todo porque me gusta cómo huele de diferente frente a otras opciones más comunes.
 
-Montale es una casa conocida por hacer perfumes muy potentes, así que conviene tener cuidado al usar sus fragancias, especialmente las más dulces, como Infinity.
+Montale es una casa conocida por hacer perfumes muy potentes, así que conviene tener cuidado al usar sus fragancias, especialmente las más dulces, como Infinity, y en la [guía sobre cómo aplicar perfume](/articulos/guia-como-aplicar-perfume/) cuento cómo ajustar esto sin pasarte.
 
 ## ¿Cuándo usarlo?
 
@@ -61,7 +61,7 @@ Yo lo usaría sobre todo en:
 - otoño
 - noche
 
-Para mí, destaca mucho más de noche, aunque no necesariamente en un ambiente de fiesta o discoteca. Lo veo más en una reunión tranquila con amigos, una cena o un contexto donde quieras llevar algo distinto y con carácter.
+Para mí, destaca mucho más de noche, aunque no necesariamente en un ambiente de fiesta o discoteca. Lo veo más en una reunión tranquila con amigos, una cena o un contexto donde quieras llevar algo distinto y con carácter, algo que va muy de la mano con [cuándo y por qué usar un perfume u otro](/articulos/cuando-y-por-que-usar-un-perfume-u-otro/).
 
 ## Puntos fuertes
 

@@ -47,7 +47,7 @@ Esta es una de las fragancias más famosas de la historia y durante muchos años
 
 En mi piel dura aproximadamente 2 horas, y después queda una capa muy fina, casi como una segunda piel. La estela tampoco es nada especial y, para lo poco que dura, es complicado que llegue a hacerse notar demasiado.
 
-Si la tienes, te recomendaría llevar un pequeño atomizador para reaplicar durante el día. Por suerte, es un perfume muy agradable y difícilmente va a molestar a nadie.
+Si la tienes, te recomendaría llevar un pequeño atomizador para reaplicar durante el día, tal como explico en la [guía sobre cómo aplicar perfume](/articulos/guia-como-aplicar-perfume/). Por suerte, es un perfume muy agradable y difícilmente va a molestar a nadie.
 
 ## ¿Cuándo usarlo?
 
@@ -58,7 +58,7 @@ Yo lo usaría sobre todo en:
 - verano
 - playa o planes informales con calor
 
-Es una fragancia claramente pensada para días calurosos, para salir a tomar algo o para ir a la oficina cuando aprieta el calor.
+Es una fragancia claramente pensada para días calurosos, para salir a tomar algo o para ir a la oficina cuando aprieta el calor, en la línea de [cuándo y por qué usar un perfume u otro](/articulos/cuando-y-por-que-usar-un-perfume-u-otro/).
 
 ## Puntos fuertes
 
@@ -90,6 +90,6 @@ La diferencia es que Acqua di Gio mantiene un olor más natural y menos sintéti
 
 Mi opinión sobre Acqua di Gio es bastante clara: sigue siendo una fragancia con un olor muy bueno, muy agradable y muy fácil de gustar, pero su rendimiento me decepciona demasiado como para recomendarla con entusiasmo.
 
-Si solo valoras el olor, puede seguir siendo una buena opción. Pero si también te importa que el perfume dure y proyecte de forma razonable, creo que hoy hay alternativas más interesantes.
+Si solo valoras el olor, puede seguir siendo una buena opción. Pero si también te importa que el perfume dure y proyecte de forma razonable, creo que hoy hay alternativas más interesantes y con mejor rendimiento como las que recojo en [los 5 perfumes que más duran](/articulos/los-5-perfumes-que-mas-duran/).
 
 Mi nota final para Acqua di Gio es un 3/10, no por el olor, que me gusta bastante, sino porque para mí su rendimiento está muy por debajo de lo que debería ofrecer.

@@ -7,7 +7,7 @@ slug: "cuando-y-por-que-usar-un-perfume-u-otro"
 
 # Cuándo y por qué usar un perfume u otro
 
-En el artículo anterior hablé sobre cómo aplicar perfume y sobre algunas formas de potenciar tanto la proyección como la duración.
+En el artículo anterior hablé sobre [cómo aplicar perfume](/articulos/guia-como-aplicar-perfume/) y sobre algunas formas de potenciar tanto la proyección como la duración.
 
 En este quiero hablar de otra parte igual de importante: qué perfume usar según la época del año, la ocasión o el objetivo que tengamos.
 
@@ -35,10 +35,10 @@ Por eso, en épocas frías suelen encajar mejor perfumes cálidos y envolventes,
 
 Si tuviera que elegir un perfume de mi colección para cada estación, sería algo así:
 
-- Invierno: Khamrah Qahwa
+- Invierno: [Khamrah Qahwa](/reviews/khamrah-qahwa/)
 - Primavera: Le Beau Paradise Garden
 - Verano: Odyssey Go Mango
-- Otoño: The Most Wanted
+- Otoño: [The Most Wanted](/reviews/the-most-wanted/)
 
 ## Día y noche no son lo mismo
 
@@ -59,7 +59,7 @@ Por último, también hay que pensar en a dónde vamos y qué queremos transmiti
 
 ### Para oficina o trabajo
 
-Si voy a la oficina o a un entorno cerrado, normalmente prefiero olores poco invasivos, aunque tengan buena presencia. En este tipo de casos me parece muy buena opción algo como Y Eau de Parfum, porque proyecta bien, huele moderno y suele gustar sin resultar excesivo.
+Si voy a la oficina o a un entorno cerrado, normalmente prefiero olores poco invasivos, aunque tengan buena presencia. En este tipo de casos me parece muy buena opción algo como [Y Eau de Parfum](/reviews/y-eau-de-parfum/), porque proyecta bien, huele moderno y suele gustar sin resultar excesivo.
 
 Y si además voy a tener una entrevista o una reunión importante, probablemente elegiría una fragancia algo más cercana, más limpia y que transmita confianza. No algo que diga “aquí estoy yo”, sino más bien algo que invite a acercarse.
 
